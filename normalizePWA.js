@@ -1,4 +1,6 @@
 export default () => {
+  
+  window.resizeTo(window.screen.availWidth, window.screen.availHeight);
 
   window.addEventListener('contextmenu',
     event => event.preventDefault()
