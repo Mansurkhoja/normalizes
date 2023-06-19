@@ -1,5 +1,5 @@
 export default () => {
-  
+
   window.resizeTo(window.screen.availWidth, window.screen.availHeight);
 
   window.addEventListener('contextmenu',
@@ -25,5 +25,11 @@ export default () => {
   if (navigator.userAgent.search('Windows') !== -1) {
     document.documentElement.classList.add('windows')
   }
+
+  window.addEventListener('keydown',
+    event => {
+      if (event.key === 'Dead') event.preventDefault()
+    } 
+  )
 
 }
