@@ -28,7 +28,11 @@ export default () => {
 
   window.addEventListener('keydown',
     event => {
-      if (event.key === 'Dead') event.preventDefault()
+      if (  event.key === 'Dead' ||
+          event.code === 'KeyI' ||
+          event.code === 'KeyR' ||
+          event.code === 'F5'
+      ) event.preventDefault()
     } 
   )
 
