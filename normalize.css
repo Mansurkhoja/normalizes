@@ -284,6 +284,7 @@ input {
 a {
   text-decoration: none;
   background-color: transparent;
+  color: inherit;
 }
 
 /* settings */
